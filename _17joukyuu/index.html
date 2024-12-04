@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sneakers</title>
+
+        <!-- リセットCSS読み込み -->
+        <link rel="stylesheet" href="https://unpkg.com/destyle.css@3.0.2/destyle.min.css">
+
+        <!-- オリジナルのCSS読み込み -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- jQuery読み込み -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <!-- カルーセル用JS -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <!-- オリジナルのJS読み込み -->
+        <script src="js/main.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <!-- ヘッダー内左側 -->
+            <h1 class="header__logo">
+                <a href="#">Sample</a>
+            </h1>
+
+            <!-- ヘッダー内右側 -->
+            <div class="header__menu">
+                <div class="header__menu-button">
+                    <button class="header__menu-trigger" id="header__menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- サイドバー /////////////////////////////////////// -->
+            <aside>
+                <ul class="campany-menu">
+                    <li><a href="#pickup">PICK UP</a></li>
+                    <li><a href="#feature">FEATURE</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <ul class="sns-menu">
+                    <li>Twitter</li>
+                    <li>facebook</li>
+                    <li>instagram</li>
+                </ul>
+            </aside>
+            <div id="mask"></div>
+        </header>
+        
+        <main>
+
+            <!-- メイン///////////////////////////////////////////////////////// -->
+            <article>
+                <section>
+                    <!-- <video autoplay muted loop width="100%"> -->
+                    <video controls width="80%">
+                        <source src="img/sample.mp4" type="video/mp4" />
+                        <!-- <source src="img/video.mp4" type="video/mp4" /> -->
+                    </video>
+                </section>
+                
+                <!-- PICK UP -->
+                <section class="pickup" id="pickup">
+                    <h2>PICK UP</h2>
+                    <div class="slider">
+                        <div class="slider-items">
+                            <div><img src="img/pickup_1.png" alt="image"></div>
+                            <div><img src="img/pickup_2.png" alt="image"></div>
+                            <div><img src="img/pickup_3.png" alt="image"></div>
+                            <div><img src="img/pickup_4.png" alt="image"></div>
+                            <div><img src="img/pickup_5.png" alt="image"></div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- FEATURE -->
+                <section class="feature" id="feature">
+                    <h2>FEATURE</h2>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card__img"><img src="img/feature1.png"></div>
+                            <div class="card__text">
+                                <h3 class="card__text-title">category</h3>
+                                <p class="card__text-main">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <p class="card__text-date">xxxx.xx.xx</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__img"><img src="img/feature2.png"></div>
+                            <div class="card__text">
+                                <h3 class="card__text-title">category</h3>
+                                <p class="card__text-main">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <p class="card__text-date">xxxx.xx.xx</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__img"><img src="img/feature3.png"></div>
+                            <div class="card__text">
+                                <h3 class="card__text-title">category</h3>
+                                <p class="card__text-main">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <p class="card__text-date">xxxx.xx.xx</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__img"><img src="img/feature4.png"></div>
+                            <div class="card__text">
+                                <h3 class="card__text-title">category</h3>
+                                <p class="card__text-main">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <p class="card__text-date">xxxx.xx.xx</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__img"><img src="img/feature5.png"></div>
+                            <div class="card__text">
+                                <h3 class="card__text-title">category</h3>
+                                <p class="card__text-main">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <p class="card__text-date">xxxx.xx.xx</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__img"><img src="img/feature6.png"></div>
+                            <div class="card__text">
+                                <h3 class="card__text-title">category</h3>
+                                <p class="card__text-main">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <p class="card__text-date">xxxx.xx.xx</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__img"><img src="img/feature7.png"></div>
+                            <div class="card__text">
+                                <h3 class="card__text-title">category</h3>
+                                <p class="card__text-main">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <p class="card__text-date">xxxx.xx.xx</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__img box"><img src="img/feature8.png"></div>
+                            <div class="card__text">
+                                <h3 class="card__text-title">category</h3>
+                                <p class="card__text-main">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <p class="card__text-date">xxxx.xx.xx</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__img"><img src="img/feature9.png"></div>
+                            <div class="card__text">
+                                <h3 class="card__text-title">category</h3>
+                                <p class="card__text-main">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                                <p class="card__text-date">xxxx.xx.xx</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <footer>
+            <div class="contact" id="contact">
+                <h2 class="contact__title">CONTACT</h2>
+                <div class="contact__grid-wrapper">
+                    <div class="contact__text-block">
+                        <p>テキストテキストテキストテキスト</p>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                    <div class="contact__form-block">
+                        <form method="post" action="#">
+                            <div class="form-item">
+                                <label>Name:</label>
+                                <p><input type="text" name="name"></p>
+                            </div>
+                            <div class="form-item">
+                                <label>Mail:</label>
+                                <p><input type="text" name="mail"></p>
+                            </div>
+                            <div class="form-item">
+                                <label>Message:</label>
+                                <p><textarea name="message" rows="10"></textarea></p>
+                            </div>
+                            <div class="form-item">
+                                <p><input type="submit" value="SEND"></p>
+                                <!-- <p><input type="reset" value="キャンセル"></p> -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; Sneakers</p>
+            </div>
+        </footer>
+        
+    </body>
+</html>
+

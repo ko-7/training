@@ -1,0 +1,117 @@
+h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* ヘッダーのスタイル/////////////////////////////////////////// */
+header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    font-size: 32px;
+}
+
+.header__menu-trigger,
+.header__menu-trigger span {
+    display: inline-block;
+    transition: all 0.4s;
+    box-sizing: border-box;
+}
+
+.header__menu-trigger {
+    position: relative;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.header__menu-trigger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #121212;
+}
+
+.header__menu-trigger span:nth-of-type(1) {
+    top: 0;
+}
+
+.header__menu-trigger span:nth-of-type(2) {
+    top: 10px;
+}
+
+.header__menu-trigger span:nth-of-type(3) {
+    bottom: 0;
+}
+
+#menu02.active span:nth-of-type(1) {
+    transform: translateY(10px) rotate(-315deg);
+}
+
+#menu02.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+#menu02.active span:nth-of-type(3) {
+    transform: translateY(-10px) rotate(315deg);
+}
+
+
+/* サイドバーのスタイル//////////////////////////////////////////////// */
+aside {
+    padding: 50px 30px;
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -300px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    transition: all 0.5s ease;
+    overflow: auto;
+}
+
+aside.active {
+    left: 0;
+}
+
+#mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#mask.active {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.campany-menu{
+    margin-bottom: 100px;
+    border-top: 1px solid #fff;
+}
+.campany-menu li{
+    padding: 20px 0;
+    border-bottom: 1px solid #fff;
+}
+.sns li{
+    margin: 10px 0;
+}
+
+
+/* セクションのスタイル////////////////////////////////////////// */
+section{
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+section.pickup{
+    
+}
