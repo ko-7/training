@@ -138,11 +138,18 @@ aside.active {
 
 /* セクションの共通スタイル////////////////////////////////////////// */
 section{
-    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     text-align: center;
     h2{
+        height: 62px;
+        line-height: 62px;
         margin-bottom: 30px;
         font-size: 36px;
+    }
+    &:first-child{
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
@@ -150,7 +157,6 @@ section{
 /*　pickup　*/////////////////
 section.pickup{
     .slider{ 
-        // padding: 0 50px;
         height: 271px;
     }
     .slider-items {
@@ -175,9 +181,8 @@ section.pickup{
 
 /* feature///////////////////////////////// */
 section.feature {
-    padding: 0 5%;
-    width: 100%;
     .cards{
+        margin: 0 26px;
         display: grid;
         gap: 26px;
         grid-template-columns: 1fr 1fr 1fr;
@@ -204,13 +209,13 @@ section.feature {
             
             .card__text{
                 padding: 30px;
-                .card-text-title{
+                .card__text-title{
                     text-align: left;
                     margin-bottom: 30px;
                 }
                 .card__text-main{
                     margin-bottom: 30px;
-                    text-align: left
+                    text-align: left;
                 }
                 .card__text-date{
                     text-align: right;
@@ -222,7 +227,8 @@ section.feature {
 
 
 footer{
-    padding: 10px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: #fff;
     background-color: #121212;
     .contact{

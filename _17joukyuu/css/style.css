@@ -133,12 +133,19 @@ aside.active {
 
 /* セクションの共通スタイル////////////////////////////////////////// */
 section {
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   text-align: center;
 }
 section h2 {
+  height: 62px;
+  line-height: 62px;
   margin-bottom: 30px;
   font-size: 36px;
+}
+section:first-child {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 /*　pickup　*/
@@ -165,11 +172,8 @@ section.pickup .slick-prev:before, section.pickup .slick-next:before {
 }
 
 /* feature///////////////////////////////// */
-section.feature {
-  padding: 0 5%;
-  width: 100%;
-}
 section.feature .cards {
+  margin: 0 26px;
   display: grid;
   gap: 26px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -202,7 +206,7 @@ section.feature .cards .card .card__img.animated {
 section.feature .cards .card .card__text {
   padding: 30px;
 }
-section.feature .cards .card .card__text .card-text-title {
+section.feature .cards .card .card__text .card__text-title {
   text-align: left;
   margin-bottom: 30px;
 }
@@ -215,7 +219,8 @@ section.feature .cards .card .card__text .card__text-date {
 }
 
 footer {
-  padding: 10px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: #fff;
   background-color: #121212;
 }
